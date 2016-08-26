@@ -1,0 +1,177 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<artifactId>leimingtech</artifactId>
+		<groupId>com.leimingtech</groupId>
+		<version>1.1-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>leimingtech-payment</artifactId>
+	<packaging>jar</packaging>
+
+	<name>leimingtech-payment</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<!-- <dependency>
+			<groupId>com.leimingtech</groupId>
+			<artifactId>leimingtech-core</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency> -->
+
+		<dependency>
+			<groupId>com.leimingtech</groupId>
+			<artifactId>leimingtech-service</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+        <!--微信支付app -->
+		<!-- <dependency>
+			<groupId>org.xmlpull</groupId>
+			<artifactId>xmlpull</artifactId>
+			<version>1.1.4</version>
+			<scope>system</scope>
+			<systemPath>
+				${project.basedir}/src/main/webapp/WEB-INF/lib/xpp3-1.1.4c.jar
+			</systemPath>
+		</dependency> -->
+
+		<dependency>
+			<groupId>com.tencent</groupId>
+			<artifactId>tencent</artifactId>
+			<version>1.1.0</version>
+			<scope>system</scope>
+			<systemPath>
+				${project.basedir}/src/main/webapp/WEB-INF/lib/libammsdk.jar
+			</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.allinpay</groupId>
+			<artifactId>allinpay</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>
+				${project.basedir}/src/main/webapp/WEB-INF/lib/allinpay-security-(2014.11.10).jar
+			</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bouncycastle</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>
+				${project.basedir}/src/main/webapp/WEB-INF/lib/bcprov-jdk15-141.jar
+			</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.allinpay</groupId>
+			<artifactId>client</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>
+				${project.basedir}/src/main/webapp/WEB-INF/lib/refundOrder.jar
+			</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.xmlpull</groupId>
+			<artifactId>xmpull</artifactId>
+			<version>1.1.3.1</version>
+			<scope>system</scope>
+			<systemPath>
+				${project.basedir}/src/main/webapp/WEB-INF/lib/xmlpull-1.1.3.1.jar
+			</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.xmlpull</groupId>
+			<artifactId>xpp3</artifactId>
+			<version>1.1.4c</version>
+			<scope>system</scope>
+			<systemPath>
+				${project.basedir}/src/main/webapp/WEB-INF/lib/xpp3_min-1.1.4c.jar
+			</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.thoughtworks</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.1</version>
+			<scope>system</scope>
+			<systemPath>
+				${project.basedir}/src/main/webapp/WEB-INF/lib/xstream-1.4.1.jar
+			</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.thoughtworks</groupId>
+			<artifactId>xstream-benchmark</artifactId>
+			<version>1.3.1</version>
+			<scope>system</scope>
+			<systemPath>
+				${project.basedir}/src/main/webapp/WEB-INF/lib/xstream-benchmark-1.3.1.jar
+			</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jodd</groupId>
+			<artifactId>jodd</artifactId>
+			<version>3.3.7</version>
+		</dependency>
+		<!--微信支付app -->
+		
+		<!--国际支付宝-->
+		
+<!-- 		<dependency>
+			<groupId>xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.1.3</version>
+		</dependency> -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.3.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+		<dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+        </dependency>
+        
+        <dependency>
+			<groupId>org.jdom</groupId>
+			<artifactId>jdom</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>1.45</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-lgpl</artifactId>
+			<version>1.9.1</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>leimingtech-payment</finalName>
+	</build>
+</project>
